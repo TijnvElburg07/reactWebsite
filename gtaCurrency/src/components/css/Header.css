@@ -1,16 +1,18 @@
-/* Header.css */
 .header {
-    background: #181818; /* Donkergrijze achtergrond */
+    background: #181818;
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   .logo {
-    height: 40px; /* Pas dit aan op basis van je logo */
+    height: 45px;
   }
   
   .nav-list {
@@ -19,25 +21,48 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    padding: 15px;
   }
   
   .nav-list li {
-    margin: 0 10px;
+    margin: 0 12px;
   }
   
   .nav-list a {
     text-decoration: none;
-    background: #292929; /* Donkergrijze knoppen */
+    background: #292929;
     color: white;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   .nav-list a:hover {
     background: #3a3a3a;
-    color: #ffffff;
+    color: #ffcc00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-list li {
+      margin: 8px 0;
+    }
+  
+    .nav-list a {
+      width: 100%;
+      text-align: center;
+    }
   }
   

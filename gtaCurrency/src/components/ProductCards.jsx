@@ -7,18 +7,6 @@ function ProductCards({ name, description }) {
               <h2>{name}</h2>
               <p>{description}</p>
           </div>
-          <div className="product-card">
-              <h2>{name}</h2>
-              <p>{description}</p>
-          </div>
-          <div className="product-card">
-              <h2>{name}</h2>
-              <p>{description}</p>
-          </div>
-          <div className="product-card">
-              <h2>{name}</h2>
-              <p>{description}</p>
-          </div>
       </div>
     );
   }

@@ -1,0 +1,47 @@
+/* Wrapper for the product cards */
+.product-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Style for individual product card */
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for product card */
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style for product name */
+  .product-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style for product description */
+  .product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Optional: Add a little spacing between each card */
+  .product-card + .product-card {
+    margin-top: 20px;
+  }
+  

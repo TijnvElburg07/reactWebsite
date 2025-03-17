@@ -12,10 +12,7 @@ function Header({ title }) {
             <a href="/products">Products</a>
           </li>
           <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <a href="#">Info</a>
           </li>
         </ul>
       </nav>
